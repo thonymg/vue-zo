@@ -45,7 +45,7 @@ const registerOnVue3 = (app: ZoVueElement, instance: Zo) => {
   registerDirectives(app, true);
 };
 
-export const ZoPlugin = {
+export const VueZo = {
   install(Vue: any, options = {}) {
     const isVue3 = !!Vue.config.globalProperties;
     const zo = new Zo(options);

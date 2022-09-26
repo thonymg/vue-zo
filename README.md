@@ -1,6 +1,7 @@
 
 <h1 align="center" style="text-align:center">Vue Zo - Roles & Permissions</h1>
 
+vue-zo is a plugin for [Vue.js](https://vuejs.org/) & [Nuxt.js](https://nuxtjs.org/) (not tested yet) that allows you to use roles and permissions in your components or DOM elements, also compatible as middleware and methods.
 ## Features
 
 - Persistent roles/permissions

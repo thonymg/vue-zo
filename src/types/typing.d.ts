@@ -1,4 +1,5 @@
-import { Directive } from "vue";
+/* eslint-disable @typescript-eslint/ban-types */
+import { Zo }  from "../core/Zo"
 
 export type Option = {
   persistent?: boolean | undefined;

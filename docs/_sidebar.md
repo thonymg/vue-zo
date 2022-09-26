@@ -2,6 +2,7 @@
 
   - [Quick start](installation/quickstart.md)
   - [Vue.js](installation/vue.md)
+  - [Nuxt.js](installation/nuxt.md)
   - [Configuration](installation/configuration.md)
 
 - Usage

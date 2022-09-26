@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import { Zo }  from "../core/Zo"
+import { Zo } from '../core/Zo';
 
 export type Option = {
   persistent?: boolean | undefined;
@@ -17,6 +17,6 @@ export interface ZoVueElement {
   $zo: Zo;
   directive: Function;
   config: any;
-  provide: any
-  prototype: any
+  provide: any;
+  prototype: any;
 }

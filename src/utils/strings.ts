@@ -3,12 +3,13 @@ export const startCase = (str: string) =>
 
 export const isEmpty = (obj: string) => Object.keys(obj).length === 0;
 
-export const pregQuote = (str: string) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+export const pregQuote = (str: string) =>
+  str.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&');
 
 export const match = (str: string, wildcard: string) => {
   const regex = new RegExp(
-    `^${wildcard.split(/\*+/).map(pregQuote).join(".*")}$`,
-    "g"
+    `^${wildcard.split(/\*+/).map(pregQuote).join('.*')}$`,
+    'g'
   );
   return str.match(regex);
 };

@@ -1,5 +1,5 @@
 import { match } from '../utils/strings';
-import { Option } from './../types/typing.d';
+import { ZoOption } from './../types/typing.d';
 
 export class Zo {
   #canPersistent = false;
@@ -10,7 +10,7 @@ export class Zo {
 
   #superRole: undefined | string = undefined;
 
-  constructor(options: Option = {}) {
+  constructor(options: ZoOption = {}) {
     const canPersistent = options.persistent;
     const roles = canPersistent
       ? JSON.parse(localStorage.getItem('roles')!)

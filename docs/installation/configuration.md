@@ -9,7 +9,7 @@ This packages has some useful options:
 
 ```javascript
 import Vue from 'vue';
-import VueZo from 'vue-zo';
+import {VueZo} from 'vue-zo';
 
 Vue.use(VueZo, {
   // Configuration

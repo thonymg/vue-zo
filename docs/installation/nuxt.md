@@ -8,9 +8,9 @@ In your Nuxt2 project:
 `~/plugins/vue-zo.js`:
 ```javascript
 import Vue from 'vue'
-import VueGates from 'vue-zo'
+import {VueZo} from 'vue-zo'
 
-Vue.use(VueGates);
+Vue.use(VueZo);
 
 export default (_context, inject) => {
   inject('zo', Vue.prototype.$zo);

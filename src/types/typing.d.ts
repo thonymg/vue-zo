@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import { Zo } from '../core/Zo';
 
-export type Option = {
+export type ZoOption = {
   persistent?: boolean | undefined;
   superRole?: string | undefined;
 };

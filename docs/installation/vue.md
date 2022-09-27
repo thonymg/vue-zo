@@ -4,10 +4,15 @@ In your script entry point:
 
 **Add plugin:**
 
-```javascript
+```typescript
 import { createApp } from 'vue'
-import VueZo from 'vue-zo'
+import { VueZo, ZoOption } from 'vue-zo'
 import App from './App.vue'
+
+
+declare class VueZo {
+  static install: (app: any, options?: ZoOption) => void;
+}
 
 createApp(App)
   .use(VueZo)
@@ -22,7 +27,7 @@ In your script entry point:
 
 ```javascript
 import Vue from 'vue';
-import VueZo from 'vue-zo';
+import {VueZo }from 'vue-zo';
 
 Vue.use(VueZo);
 ```

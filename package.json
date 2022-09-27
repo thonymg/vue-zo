@@ -1,6 +1,6 @@
 {
   "name": "vue-zo",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "A Vuejs plugin that allows you to use roles and permissions in your components (setup macro & option API), also compatible as middleware, methods, composition-api and Pinia",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

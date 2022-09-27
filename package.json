@@ -1,7 +1,7 @@
 {
   "name": "vue-zo",
   "version": "0.1.13",
-  "description": "A Vue 3 plugin that allows you to use roles and permissions in your components or DOM elements, also compatible as middleware and methods.",
+  "description": "A Vuejs plugin that allows you to use roles and permissions in your components (setup macro & option API), also compatible as middleware, methods, composition-api and Pinia",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",

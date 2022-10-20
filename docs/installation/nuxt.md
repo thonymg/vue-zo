@@ -28,4 +28,36 @@ export default {
 }
 ```
 
-#### Nuxt3 (comming soon)
+#### Nuxt3
+
+**1. Create plugin:**
+
+`~/plugins/vue-zo.ts`:
+```typescript
+import { VueZo } from 'vue-zo'
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.use(VueZo)
+  nuxtApp.provide('zo', nuxtApp.vueApp.config.globalProperties.$zo)
+})
+```
+
+**2. Then use it:**
+
+`app.vue`:
+```typescript
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
+
+<script setup lang="ts">
+
+const { $zo } = useNuxtApp()
+
+$zo.setRoles(['writer'])
+console.log($zo.getRoles())
+
+</script>
+```

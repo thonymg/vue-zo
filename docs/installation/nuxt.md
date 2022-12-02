@@ -28,4 +28,31 @@ export default {
 }
 ```
 
-#### Nuxt3 (comming soon)
+#### Nuxt3
+**1. Create plugin:**
+
+`~/plugins/vue-zo.js`:
+```javascript
+import { VueZo } from "vue-zo";
+
+export default defineNuxtPlugin((nuxtApp) => {
+  const { $zo } = nuxtApp.vueApp.use(VueZo, {});
+
+  return {
+    provide: { zo: $zo },
+  };
+});
+
+```
+
+**2. Then use it:**
+
+`nuxt.config.js`:
+```javascript
+
+const { $zo } = useNuxtApp();
+
+$zo.setRoles(['writer']);
+
+$zo.getRoles();
+```

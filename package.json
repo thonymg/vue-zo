@@ -1,7 +1,7 @@
 {
   "name": "vue-zo",
-  "version": "0.1.17",
-  "description": "A Vuejs plugin that allows you to use roles and permissions in your components (setup macro & option API), also compatible as middleware, methods, composition-api and Pinia",
+  "version": "0.1.19",
+  "description": "A Vuejs/Nuxt plugin that allows you to use roles and permissions in your components (setup macro & option API), also compatible as middleware, methods, composition-api and Pinia",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
@@ -50,7 +50,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@bitauth/libauth": "^1.17.1"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",

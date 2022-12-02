@@ -27,6 +27,9 @@ npm install vue-zo --save-dev
 - Support server-side rendering (Nuxt.js)
 - TypeScript support
 
+## documentation
+[Docs](https://github.com/thonymg/vue-zo/tree/master/docs)
+
 ## 🙈 Credits
 
 - Based on [Vue-gates](https://github.com/williamcruzme/vue-gates).

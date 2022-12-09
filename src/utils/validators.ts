@@ -26,7 +26,6 @@ export const isConditionPassed =
   (app: ZoVueElement, condition: string | Function) =>
   (el: HTMLElement, binding: Binding) => {
     if (!binding.value) {
-      console.error('You must specify a value in the directive.');
       return;
     }
 

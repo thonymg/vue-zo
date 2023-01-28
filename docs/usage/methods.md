@@ -33,12 +33,17 @@ import { inject } from 'vue'
 import { defineStore } from "pinia";
 
 export const useAPI = defineStore("api", () => {
-  const $zo = inject("$zo");
+  let $zo: ZoTypes;
   
   const setRoles = () => {
     $zo.setRoles(['writer']);
     $zo.setPermissions(['posts.*', 'images.create']);
   }
+
+
+ onMounted(() => {
+    $zo = inject("$zo");
+  });
 
   return {
     setRoles
